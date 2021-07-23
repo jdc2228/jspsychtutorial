@@ -1,3 +1,8 @@
+/* Change 1: Adding the image hosting site */
+// define the site that hosts stimuli images
+// usually https://<your-github-username>.github.io/<your-experiment-name>/
+var repo_site = "https://jdc2228.github.io/Simple-RT-Task/"; 
+
 /* create timeline */
 var timeline = [];
 
