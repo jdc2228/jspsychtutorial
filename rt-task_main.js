@@ -1,7 +1,7 @@
 /* Change 1: Adding the image hosting site */
 // define the site that hosts stimuli images
 // usually https://<your-github-username>.github.io/<your-experiment-name>/
-var repo_site = "https://jdc2228.github.io/Simple-RT-Task/"; 
+var repo_site = "https://jdc2228.github.io/jspsychtutorial/"; 
 
 /* create timeline */
 var timeline = [];
@@ -22,9 +22,9 @@ var instructions = {
         "<p>If the circle is <strong>orange</strong>, press the letter J " +
         "as fast as you can.</p>" +
         "<div style='width: 700px;'>"+
-        "<div style='float: left;'><img src='img/blue.png'></img>" +
+        "<div style='float: left;'><img src='" + repo_site +"img/blue.png'></img>" +
         "<p class='small'><strong>Press the F key</strong></p></div>" +
-        "<div class='float: right;'><img src='img/orange.png'></img>" +
+        "<div class='float: right;'><img src='" + repo_site +"img/orange.png'></img>" +
         "<p class='small'><strong>Press the J key</strong></p></div>" +
         "</div>"+
         "<p>Press any key to begin.</p>",
@@ -35,8 +35,8 @@ timeline.push(instructions);
 /* test trials */
 
 var test_stimuli = [
-    { stimulus: "img/blue.png", data: { test_part: 'test', correct_response: 'f' } },
-    { stimulus: "img/orange.png", data: { test_part: 'test', correct_response: 'j' } }
+    { stimulus: repo_site + "img/blue.png", data: { test_part: 'test', correct_response: 'f' } },
+    { stimulus: repo_site + "img/orange.png", data: { test_part: 'test', correct_response: 'j' } }
 ];
 
 var fixation = {
